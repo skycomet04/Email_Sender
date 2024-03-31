@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="static/mail.css"> 
+    </head>
+    <body> 
+        <h1>Thank You for Contacting </h1>
+        <form action="" method="post"> 
+        {% csrf_token %}
+        <div class="mailsend"> 
+        <div class="mail">
+            <label for="name">Full Name</label> 
+            <input type="text" class="form-type" id="name" name="name"><br>
+        </div>
+        <div class="mail">
+            <label for="emailid">Email Id</label> 
+            <input type="email" class="form-type" id="emailid" name="emailid" placeholder="email@xyz.com">
+        </div>
+        <div class="mail">
+            <label for="ques">Ask Question</label> 
+            <textarea class="form-type area"  id="desc" name="desc" rows="3"></textarea>
+        </div>
+        <div class="mail">
+        <button type="submit" class="form-type bt-type" >Submit</button></div>
+        </div>
+        </form> 
+    </body> 
+</html>
